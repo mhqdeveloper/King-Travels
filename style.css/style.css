@@ -7,6 +7,7 @@
     font-family: 'Mulish', sans-serif;
 }
 
+/* shared class Start */
 .container {
     max-width: 1140px;
     margin: 0 auto;
@@ -50,11 +51,17 @@
 
 /* shared class end  */
 
+/* Nav section Start */
 .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
+}
+
+#toggler,
+label {
+    display: none;
 }
 
 .nav-container .nav-logo {
@@ -64,8 +71,9 @@
     align-items: center;
 }
 
-.nav-logo>img {
+.nav-logo > img {
     width: 44px;
+
 }
 
 .nav-logo p,
@@ -73,7 +81,7 @@
 
     font-weight: 800;
     font-size: 1.5rem;
-    padding: 10px 8px;
+    padding: 17px 0px 0px 5px;
 }
 
 .nav-logo span {
@@ -89,12 +97,15 @@ a {
     padding: 12px 5px;
 }
 
+
 .menu-item .orange-color {
     color: var(--primary-color);
     font-weight: 500;
 }
 
 /* navbar section end  */
+
+/* Banner section start  */
 .banner-section {
     background-image: url('../Images/Group\ 13\ \(1\)\ \(1\).png');
     background-position: cover;
@@ -109,7 +120,6 @@ a {
 .banner-container {
     border-radius: 12px;
     margin-top: 20px;
-    /* align-items: center; */
     padding: 80px 200px;
     height: 480px;
     background: linear-gradient(180deg, rgba(44, 44, 51, 0.8) 0%, rgba(19, 19, 24, 0.00) 100%);
@@ -118,7 +128,6 @@ a {
 .banner-content {
     color: white;
     text-align: center;
-    /* margin-bottom: 50px; */
     margin: 50px 0;
 }
 
@@ -151,20 +160,13 @@ a {
     padding: 2px 0px;
 }
 
-/* .banner-input-area span {
-    color: var(--discription-color);
-} */
 
 option {
     font-size: 0.8rem;
-    /* padding: 0 20px ; */
     color: var(--discription-color);
 }
 
-/* select{
-    font-size: 0.8rem;
-    
-} */
+
 .banner-input-area>div {
     background-color: white;
     margin: 0 20px;
@@ -193,38 +195,20 @@ option {
     font-weight: 600;
 
 }
+.find-text i{
+    padding: 0 4px;
 
-/* .banner-input-area
-span {
-    font-size: 0.8rem;
 }
-
-.transition {
-    padding-left: 10px;
-    transform: translate(50px, 90%);
-
-} 
-
-.banner-input-area .find-class {
-    color: white;
-    background: var(--primary-color);
-}
-*/
-
-
 /* banner and  Header section end */
+
+/* popular section Start  */
 .popular-section {
     display: flex;
-    /* padding: 50px ; */
-    /* margin: 50px 0px; */
-
-
 }
 
 .popular-content {
     margin-top: 50px;
     padding-right: 80px;
-
 }
 
 .popular-content * {
@@ -233,12 +217,11 @@ span {
 
 .popular-section img {
     margin-top: 50px;
-
     width: 500px;
 }
-
 /* popular section end  */
 
+/* destination section Start */
 .destination-content {
     text-align: center;
     margin-top: 45px;
@@ -324,7 +307,7 @@ p {
 /* destination section end  */
 
 .choose-us-section>img {
-    width: 10%;
+    width: 100%;
 }
 
 .choose-us-content {
@@ -342,47 +325,39 @@ p {
 .world-class-service {
     padding: 20px;
     width: 48%;
-    margin-top: 50px;
 
 }
 
 .hotel-service {
     border-radius: 16px;
-    border: 1px solid rgba(251, 181, 99, 0.20);
+    border: 2px solid rgba(251, 181, 99, 0.20);
     background: rgba(251, 181, 99, 0.05);
 }
 
 .world-class-service {
     border-radius: 16px;
-    border: 1px solid rgba(251, 181, 99, 0.20);
+    border: 2px solid rgba(251, 181, 99, 0.20);
     background: rgba(208, 99, 251, 0.05);
 }
 
 .best-price-service {
     border-radius: 16px;
-    border: 1px solid rgba(251, 181, 99, 0.20);
+    border: 2px solid rgba(251, 181, 99, 0.20);
     background: rgba(160, 251, 99, 0.05);
     width: 50%;
     padding: 20px;
     margin: 20px auto;
-    justify-content: center;
-    align-items: center;
 }
 
-.hotel-service * {
+
+.hotel-service *, .world-class-service *, .best-price-service * {
     padding: 8px 0px;
 }
-
-.world-class-service * {
-    padding: 8px 0px;
-}
-
-.best-price-service * {
-    padding: 8px 0px;
-
-}
-
 /* Why Choose Us section end  */
+
+
+/* Deal section start  */
+/* Shared class but this section under class  */
 .deal-title {
     font-weight: 800;
 }
@@ -393,7 +368,7 @@ p {
     margin-bottom: 14px;
 }
 
-/* Shared class but under class  */
+/* Shared class but this section  under class  */
 
 .deal-section .deal-content {
     text-align: center;
@@ -448,7 +423,7 @@ p {
     border-radius: 16px;
     border: 2px solid #fdba6d;
     background: rgba(255, 255, 255, 0.80);
-    backdrop-filter: blur(2.5px);
+    backdrop-filter: blur(2.2px);
 
 }
 
@@ -456,8 +431,6 @@ p {
     position: relative;
     top: 70px;
     left: 50px;
-
-
 }
 
 .deal-img-one *,
@@ -484,6 +457,7 @@ p {
 
 /* Deals & Discounts Section End */
 
+/* perfect-place Start  */
 .perfect-place {
     display: flex;
     justify-content: space-between;
@@ -502,9 +476,9 @@ p {
     color: #000;
     font-weight: 800;
 }
-
 /* perfect-place end  */
 
+/* newsletter section Start  */
 .newsletter-section {
     display: flex;
     justify-content: space-between;
@@ -521,44 +495,20 @@ p {
     border-radius: 16px;
     border: 1px solid #FF5400;
 }
-
-.newletter-content hr {
-    background-color: #FF5400;
-
-}
-
 .newletter-content form {
-    /* border-radius: 32px; */
     padding: 10px 4px;
     margin: 0px auto;
     width: 100%;
 }
 
-.newsletter-section form {
-
-    /* margin: 90px 0px; */
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
-
-}
-
 .form-content {
     margin-top: 40px;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 
-input[type="name"],
-input[type="email"] {
+input[type="name"], input[type="email"] {
 
-    /* display: block;
-    padding: 5px 0px;
-    width: 100%; */
     display: block;
-    padding: 14px 10px;
+    padding: 17px 10px;
     margin-bottom: 16px;
     width: 100%;
 }
@@ -575,8 +525,8 @@ input[type="email"],
 
 .form-btn {
     color: white;
-    font-size: 1rem;
-    font-weight: 700;
+    font-size: 1.2rem;
+    font-weight: 800;
     width: 100%;
     padding: 12px 2px;
     background-color: #f4712a;
@@ -612,6 +562,7 @@ input[type="email"],
 
 /*newletter section end*/
 
+/* footer section start  */
 .footer-section {
     height: 100%;
     background-color: rgb(247, 244, 244);
@@ -627,7 +578,10 @@ input[type="email"],
     display: flex;
     justify-content: center;
 }
+.footer-container .nav-logo img{
+    width: 5%;
 
+}
 .footer-icon>i {
     padding: 6px 10px;
     font-size: 1.5rem;
@@ -637,24 +591,42 @@ input[type="email"],
 .footer-para {
     padding-top: 40px;
 }
+/* Footer Section End  */
 
+/* >>>>>>>>>>>>>>>>>>>>>>>>>> Media Query section start <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  */
 @media screen and (max-width: 576px) {
-    .container {
-        max-width: 570px;
-        margin: 0 auto;
-
-    }
-
     .nav-logo p {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .logo-orange-color {
-        font-size: 2rem
+        font-size: 1.8rem
     }
 
-    .menu-item {
+    .menu-item{
+        width: 100%;
+        min-height: 0;
+        overflow: hidden;
         display: none;
+    }
+
+    label {
+        display: inline-flex;
+        padding: 10px;
+        font-weight: 900;
+
+    }
+
+    #toggler:checked~.menu-item {
+        max-height: 100%;
+        background-color: #000;
+
+    }
+
+    .list{
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
     }
 
     .banner-container {
@@ -662,41 +634,47 @@ input[type="email"],
     }
 
     .banner-content h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .banner-content {
-        /* margin-top: 20px; */
         margin: 0px;
     }
 
     .banner-input-area {
         flex-direction: column;
         width: 90%;
-        padding: 20px;
+        padding: 12px;
     }
 
     .banner-input-area>div {
-        width: 420px;
+        width: 90%;
         margin-bottom: 10px;
-        padding: 15px 4px
+        padding: 12px 4px
     }
 
     .popular-section {
         flex-direction: column;
     }
 
-    .destination-img-container {
-
-        display: grid;
-        grid-template-columns: repeat(13, 1fr);
-        grid-template-rows: repeat(7, 1fr);
-        gap: 25px;
-
+    .popular-section img {
+        width: 100%;
+        margin: 0;
         object-fit: cover;
-        /* margin: 0 auto; */
-        /* height: 400px; */
 
+    }
+
+    .popular-content {
+        padding: 20px;
+        margin-top: 0;
+    }
+
+    .destination-img-container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        gap: 12px;
+        object-fit: cover;
     }
 
     .destination-img-container img {
@@ -746,14 +724,12 @@ input[type="email"],
     .world-class-service,
     .best-price-service {
         width: 100%;
-        padding: 20px;
-        margin-top: 50px;
+
     }
 
 
 
     /* .deal-section  */
-
     .deal-img-container-one,
     .deal-img-container-two,
     .deal-img-container-three {
@@ -767,12 +743,6 @@ input[type="email"],
         left: 120px;
         width: 60%;
     }
-
-    /* .deal-img-one *,
-    .deal-img-two *,
-    .deal-img-three * {
-        padding: 6px 6px
-    } */
 
     .deal-title,
     .deal-para {
@@ -790,6 +760,7 @@ input[type="email"],
         width: 100%;
         padding: 20px;
     }
+
     .perfect-place-content * {
         padding-bottom: 20px;
     }
@@ -802,17 +773,20 @@ input[type="email"],
         width: 100%;
         margin-bottom: 15px;
     }
-    .newsletter-img{
+
+    .newsletter-img {
         width: 100%;
         padding-top: 350px;
     }
-    .triangle{
+
+    .triangle {
         top: -91px;
         left: 280px;
     }
 
-    .footer-container{
+    .footer-container {
         margin-top: 340px;
     }
 
 }
+/* >>>>>>>>>>>>>>>>>>>>>>>>>> Media Query section start <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  */
